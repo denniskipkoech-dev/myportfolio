@@ -3,3 +3,5 @@
 .cv-placeholder{display:inline-block;margin-top:-28px;color:#778b9b;font:9px var(--mono);letter-spacing:.4px}.cv-placeholder span{color:var(--cyan);margin-left:4px}.cv-placeholder:hover{color:var(--cyan)}
 
 .profile-photo{display:none;position:absolute;z-index:2;width:132px;height:132px;object-fit:cover;object-position:center;border-radius:50%;border:2px solid rgba(146,238,255,.8);box-shadow:0 0 0 8px rgba(0,216,245,.08),0 0 42px rgba(0,191,255,.27)}.profile-photo.is-ready{display:block}.hero-art.has-photo .orbit-core{opacity:0}
+
+.footer-links{flex-wrap:wrap}.footer-links a{white-space:nowrap}@media(max-width:680px){.footer-links{grid-column:1/-1;justify-content:center;gap:12px}.footer-inner>p{grid-column:2;grid-row:1}.copyright{grid-column:2;grid-row:3}}

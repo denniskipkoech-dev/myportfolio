@@ -6,7 +6,6 @@ A responsive, static portfolio built with plain HTML, CSS, and JavaScript. It ne
 
 Edit `index.html` and replace:
 
-- `YOUR_GITHUB_USERNAME` with your GitHub username.
 - `YOUR_EMAIL@example.com` with the email address you want to publish.
 - `YOUR_CV_URL` with a public CV URL, or remove the CV link if you do not want to share one yet.
 - `YOUR_PARKING_DEMO_URL` and `YOUR_LAUNCHPAD_DEMO_URL` with real demos when available.
@@ -16,6 +15,8 @@ Edit `index.html` and replace:
 - Update the SEO title, description, and social preview image if desired.
 
 The content describes the parking application as a learning project and Developer Career Launchpad as an in-progress concept. Keep those labels accurate as the projects develop. Never link to a demo or CV that is not ready to share.
+
+Social profiles linked in the footer: GitHub, TikTok, WhatsApp, X, and Facebook. Edit those links in `index.html` if your public profile URLs change.
 
 ## Preview locally
 
@@ -33,7 +34,7 @@ See [GitHub Pages publishing source documentation](https://docs.github.com/en/pa
    git add index.html styles.css script.js favicon.svg og-image.svg profile.jpg README.md
    git commit -m "Build personal developer portfolio"
    git branch -M main
-   git remote add origin https://github.com/YOUR_GITHUB_USERNAME/dennis-portfolio.git
+   git remote add origin https://github.com/denniskipkoech-dev/dennis-portfolio.git
    git push -u origin main
    ```
 
