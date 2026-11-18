@@ -58,7 +58,6 @@ document.querySelectorAll('[data-placeholder]').forEach((link) => {
   const type = link.dataset.placeholder;
   const href = link.getAttribute('href') || '';
   const isPlaceholder = href.includes('YOUR_GITHUB_USERNAME')
-    || href.includes('YOUR_EMAIL@example.com')
     || href.includes('YOUR_CV_URL')
     || href.includes('YOUR_PARKING_DEMO_URL')
     || href.includes('YOUR_LAUNCHPAD_DEMO_URL');
@@ -67,7 +66,6 @@ document.querySelectorAll('[data-placeholder]').forEach((link) => {
     link.addEventListener('click', (event) => {
       event.preventDefault();
       const messages = {
-        email: 'Add your email address in index.html before using this link.',
         github: 'Add your GitHub username in index.html before using this link.',
         cv: 'Add your CV URL in index.html before using this link.',
         demo: 'Add the project demo URL in index.html before using this link.'

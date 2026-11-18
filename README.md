@@ -6,7 +6,6 @@ A responsive, static portfolio built with plain HTML, CSS, and JavaScript. It ne
 
 Edit `index.html` and replace:
 
-- `YOUR_EMAIL@example.com` with the email address you want to publish.
 - `YOUR_CV_URL` with a public CV URL, or remove the CV link if you do not want to share one yet.
 - `YOUR_PARKING_DEMO_URL` and `YOUR_LAUNCHPAD_DEMO_URL` with real demos when available.
 - The project repository links with each project's actual repository URL.
