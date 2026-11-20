@@ -54,24 +54,10 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
   });
 }
 
-document.querySelectorAll('[data-placeholder]').forEach((link) => {
-  const type = link.dataset.placeholder;
-  const href = link.getAttribute('href') || '';
-  const isPlaceholder = href.includes("https://github.com/denniskipkoech.dev")
-    || href.includes('#')
-    || href.includes('https://github.com/denniskipkoech-dev/modernparking.git')
-    || href.includes('https://developer-career-launchpad-p6xruy.v2.appdeploy.ai/');
-
-  if (isPlaceholder) {
-    link.addEventListener('click', (event) => {
-      event.preventDefault();
-      const messages = {
-        github: 'https://github.com/denniskipkoech-dev',
-        cv: '#',
-        demo: 'https://developer-career-launchpad-p6xruy.v2.appdeploy.ai/'
-      };
-      const message = messages[type] || 'Update this placeholder link in index.html before using it.';
-      window.alert(message);
-    });
-  }
-});
+const cvLink = document.querySelector('.cv-placeholder');
+if (cvLink && cvLink.getAttribute('href') === '#') {
+  cvLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.alert('The CV link has not been added yet.');
+  });
+}
