@@ -59,7 +59,7 @@ document.querySelectorAll('[data-placeholder]').forEach((link) => {
   const href = link.getAttribute('href') || '';
   const isPlaceholder = href.includes("https://github.com/denniskipkoech.dev")
     || href.includes('#')
-    || href.includes('https://github.com/modernparkingsystem')
+    || href.includes('https://github.com/denniskipkoech-dev/modernparking.git')
     || href.includes('https://developer-career-launchpad-p6xruy.v2.appdeploy.ai/');
 
   if (isPlaceholder) {
